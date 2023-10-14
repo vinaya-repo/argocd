@@ -23,3 +23,7 @@ spec:
   destination:
     server: https://kubernetes.default.svc  # Kubernetes API server
     namespace: argocd  # Target namespace for deploying resources
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
