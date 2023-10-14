@@ -3,8 +3,11 @@ kind: Secret
 metadata:
   name: github-https-secret
   namespace: argocd
-type: kubernetes.io/basic-auth
-data:
+  labels:
+    argocd.argoproj.io/secret-type: repository
+stringData:
+  type: git
+  url: https://github.com/argoproj/private-repo
   username: vinaya-repo
   password: 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
 ---
