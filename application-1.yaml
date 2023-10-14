@@ -7,12 +7,12 @@ metadata:
     argocd.argoproj.io/secret-type: repository
 stringData:
   type: git
-  url: https://github.com/argoproj/private-repo
+  url: https://github.com/vinaya-repo/argocd-test-repo-1.git
 ---
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: my-app
+  name: my-app-1
   namespace: argocd
 spec:
   project: default
